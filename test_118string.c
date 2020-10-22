@@ -25,12 +25,12 @@ int main()
     cmpResult = strcmp(str1, str2);
     printf("%d\n", cmpResult); //-1
 
-    chptr1 = strchr(str1, 'l');
+    chptr1 = strchr(str1, 'l');    //返回一个指针，指向字符串 s1 中字符 ch 的第一次出现的位置。
     printf("-------%s\n", chptr1); //lloWorld
     printf("-------%p\n", chptr1); //0061FF06
     printf("-------%x\n", chptr1); //61ff06
 
-    chptr2 = strstr(str1, str2);
+    chptr2 = strstr(str1, str2);  //返回一个指针，指向字符串 s1 中字符串 s2 的第一次出现的位置
     printf("-----%s\n", chptr2);  //World
     printf("-----%c\n", *chptr2); //W
     return 0;
